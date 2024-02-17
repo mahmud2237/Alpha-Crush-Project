@@ -12,11 +12,11 @@
 <body class="font-poppins">
     <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
         <!-- Home screen -->
-        <section class="home min-h-screen text-white flex justify-center items-center hidden">
+        <section id="home-screen" class="min-h-screen text-white flex justify-center items-center">
             <div class="flex flex-col items-center gap-10">
-                <h1 class="text-8xl font-anton uppercase">Alpha Clash Pro</h1>
+                <h1 class="text-7xl font-anton uppercase">Alpha Clash Pro</h1>
                 <p>Unlesh Your Keyboard kun g Fu : Press "Enter" to Play</p>
-                <button class="btn bg-white text-black">Play</button>
+                <button onclick="play()" class="btn bg-white text-black">Play Now</button>
             </div>
         </section>
         <!-- PlayGround Start -->
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <!-- KeyBoard start -->
-                <div class="flex justify-center gap-1 my-1 w-full">
+                <div class="flex justify-center gap-1 my-4 w-full">
                     <kbd class="kbd">q</kbd>
                     <kbd class="kbd">w</kbd>
                     <kbd class="kbd">e</kbd>
@@ -44,7 +44,7 @@
                     <kbd class="kbd">o</kbd>
                     <kbd class="kbd">p</kbd>
                 </div>
-                <div class="flex justify-center gap-1 my-1 w-full">
+                <div class="flex justify-center gap-1 my-4 w-full">
                     <kbd class="kbd">a</kbd>
                     <kbd class="kbd">s</kbd>
                     <kbd class="kbd">d</kbd>
@@ -55,7 +55,7 @@
                     <kbd class="kbd">k</kbd>
                     <kbd class="kbd">l</kbd>
                 </div>
-                <div class="flex justify-center gap-1 my-1 w-full">
+                <div class="flex justify-center gap-1 my-4 w-full">
                     <kbd class="kbd">z</kbd>
                     <kbd class="kbd">x</kbd>
                     <kbd class="kbd">c</kbd>
@@ -86,7 +86,8 @@
             </div>
         </section>
         <!-- PlayGround End -->
-        <section class="score flex justify-center items-center min-h-screen">
+        <!-- Final Score Section -->
+        <section class="score flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score:</span>
@@ -97,6 +98,7 @@
             </div>
         </section>
     </main>
+    <script src="scripts/alpha-clush.js"></script>
 </body>
 
 </html>
