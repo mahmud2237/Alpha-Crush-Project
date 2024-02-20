@@ -93,6 +93,10 @@ function play(){
     hideElementById('home-screen');
     hideElementById('final-score');
     showElementById('play-ground');
+
+    //reset score and life
+    setTextElementValueById('current-life', 5);
+    setTextElementValueById('current-score', 0);
     continueGame();
 }
 
